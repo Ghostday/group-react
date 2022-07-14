@@ -1,10 +1,15 @@
 
-export default function Links(){
+export default function Links(props){
+    console.log(props.things)
     return(
         <div className="links">
-            <a className="indv-link"  href="/">Home</a>
-            <a className="indv-link"  href="/">Search</a>
-            <a className="indv-link"  href="/">About me</a>
+            {props.things.map((value, index) => {
+                return (
+                    <a key={index} href="/" className="nav-link">
+                        {value}
+                    </a>
+                )
+            })}
         </div>
     )
 }

@@ -3,11 +3,11 @@ import Links from './navbarComponents/Links'
 
 import './styling/NavBar.css'
 
-export default function NavBar(){
+export default function NavBar(props){
     return(
         <div className="NavBar">
             < Logo />
-            < Links />
+            < Links things={props.links}/>
         </div>
     )
 }
