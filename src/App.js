@@ -1,6 +1,7 @@
 import './App.css';
 import MainBody from './components/Main.jsx'
 import NavBar from './components/navbar/NavBar'
+import PopulateList from './components/populateList/PopulateList';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <header className="App-header">
         <MainBody />
       </header>
+      < PopulateList/>
     </div>
   );
 }
